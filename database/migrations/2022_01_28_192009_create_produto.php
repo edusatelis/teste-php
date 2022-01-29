@@ -19,6 +19,7 @@ class CreateProduto extends Migration
             $table->string('fornecedor_produto');
             $table->decimal('preco',10,2);
             $table->integer('quantidade');
+            $table->unsignedBigInteger('categoria_id');
             $table->timestamps();
         });
     }

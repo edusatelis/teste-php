@@ -16,7 +16,7 @@ class CreateProdutoPrecoEspecial extends Migration
         Schema::create('produto_preco_especial', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedBigInteger('produto_id');
-            $table->string('preco');
+            $table->decimal('preco',10,2);
             $table->date('data_inicio');
             $table->date('data_fim');
 
