@@ -12,11 +12,6 @@ class produto_seeder extends Seeder
     public function run()
     {
 
-        // 'nome_produto',
-        // 'fornecedor_produto',
-        // 'preco',
-        // 'quantidade',
-        // 'categoria_id'
         DB::table('produto')->insert([
             'nome_produto' => 'Cafe Gourmet',
             'fornecedor_produto' => 'jaguari',

@@ -8,7 +8,7 @@ class CreateProduto extends Migration
 {
     /**
      * Run the migrations.
-     *
+     * 
      * @return void
      */
     public function up()
@@ -19,7 +19,7 @@ class CreateProduto extends Migration
             $table->string('fornecedor_produto');
             $table->decimal('preco',10,2);
             $table->integer('quantidade');
-            $table->unsignedBigInteger('categoria_id');
+            $table->unsignedInteger('categoria_id');
             $table->timestamps();
         });
     }

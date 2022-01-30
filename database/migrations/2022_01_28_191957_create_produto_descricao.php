@@ -15,7 +15,7 @@ class CreateProdutoDescricao extends Migration
     {
         Schema::create('produto_descricao', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedBigInteger('produto_id');
+            $table->unsignedInteger('produto_id');
             $table->string('descricao');
             $table->timestamps();
         });
